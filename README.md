@@ -54,5 +54,27 @@ Additionally, the code's performance was analyzed using a fixed number of proces
 
 <img width="500" alt="results3" src="https://github.com/acse-ra922/parallel_programming_navier_stokes/assets/110524155/b7c9a3c9-049e-49c7-8572-19d4dbf036e9">
 
+Furthermore, the individual execution time for each Jacobi iteration was recorded and depicted in the accompanying graph. It demonstrates that as the number of processors increases, the time required to execute a single Jacobi iteration decreases noticeably. This behavior is anticipated since the function responsible for determining or executing the Jacobi iterations (pressure_jacobi) has been parallelized across the striped domain. By harnessing additional processors, the computational process is accelerated, resulting in faster computations and reduced iteration times.
+
+<img width="514" alt="results4" src="https://github.com/acse-ra922/parallel_programming_navier_stokes/assets/110524155/c8e9eaf0-29e3-4859-adc2-17343ff657ce">
+
+Finally, the performance analysis focused on the time taken per time step for varying numbers of processors. The results clearly demonstrate that as the number of processors increases, the time taken per time step decreases.This observation can be attributed to the implementation of parallelization, which enables the concurrent 
+execution of computational tasks associated with each time step. By distributing the workload among multiple processors, the calculations can be performed simultaneously, resulting in a significant reduction in the overall time required to complete each time step.The graph visually depicts this relationship, highlighting the benefits of parallelization. As more processors are utilized, the computational tasks are efficiently divided and executed in parallel, leading to faster completion of each time step. This increased concurrency and workload distribution among processors effectively optimize the computational resources, resulting in improved performance.
+
+<img width="466" alt="results5" src="https://github.com/acse-ra922/parallel_programming_navier_stokes/assets/110524155/1e318786-ea43-4176-bfb7-f4371976b46e">
+
+
+**Animation**
+
+https://github.com/acse-ra922/parallel_programming_navier_stokes/assets/110524155/494632a2-998d-4715-bc65-a49881ce51af
+
+**Conclusion**
+
+
+The present study employed the parallelized code on the Imperial College HPC to assess its performance under varying processor configurations and investigate the resultant changes in execution time. The results exhibited a gradual decrease in execution time as the number of processors increased. This decrease can be attributed to the availability of additional computing resources when employing extra processors, which enhances computational power.
+Furthermore, the speedup factor was computed to quantify the performance enhancement achieved through parallelization. The obtained speedup of 35 indicated that the parallelized code performs over thirty times better than its serial counterpart. The analysis encompassed the individual execution time for each Jacobi iteration, visually depicted in the accompanying graph. The results indicated a noticeable decrease in the time required to execute a single Jacobi iteration as the number of processors increased. 
+Ultimately, the study focused on the time taken per time step for varying numbers of processors. The findings convincingly demonstrated that as the number of processors increased, the time taken per time step decreased. Consequently, the utilization of more processors led to enhanced concurrency, workload distribution, and 
+optimization of computational resources, consequently yielding improved performance
+
 
 
