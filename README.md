@@ -66,7 +66,11 @@ execution of computational tasks associated with each time step. By distributing
 
 **Animation**
 
-https://github.com/acse-ra922/parallel_programming_navier_stokes/assets/110524155/494632a2-998d-4715-bc65-a49881ce51af
+Video/animations of the simulation output
+
+https://github.com/acse-ra922/parallel_programming_navier_stokes/assets/110524155/f2d7c260-577a-4ed5-bbf5-6065acc929be
+
+
 
 **Conclusion**
 
